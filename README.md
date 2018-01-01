@@ -1,3 +1,3 @@
-# brains
+# slots
 
-damn
+click to redraw
