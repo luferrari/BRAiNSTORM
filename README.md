@@ -2,4 +2,4 @@
 
 click to redraw
 
-View[https://luferrari.github.io/brains]
+[View](https://luferrari.github.io/brains)
