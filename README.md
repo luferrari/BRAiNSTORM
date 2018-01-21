@@ -1,5 +1,5 @@
-# slots
+# Brain actions
 
-click to redraw
+Click to reroll
 
 [View](https://luferrari.github.io/brains)
