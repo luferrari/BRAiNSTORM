@@ -1,5 +1,5 @@
 # Brain actions
 
-Click to reroll
+Click or press space to reroll
 
 [View](https://luferrari.github.io/brains)
