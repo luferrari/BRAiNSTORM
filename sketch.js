@@ -1,21 +1,37 @@
-var same, i, reg, med, bld;
+var same, i;
 var chosen = [];
+var reg, med, bld;
+var b0, b1, b2, b3, b4;
 
 function preload() {
   reg = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
   med = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
   bld = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
+  b0 = loadImage('./assets/images/b0.png');
+  b1 = loadImage('./assets/images/b1.png');
+  b2 = loadImage('./assets/images/b2.png');
+  b3 = loadImage('./assets/images/b3.png');
+  b4 = loadImage('./assets/images/b4.png');
 }
 
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  noStroke();
+}
 
+function img(x) {
+  image(x, 520, 56, 480, 480);
 }
 
 function draw() {
   background(209, 210, 211);
+  img(b0);
+  img(b1);
+  img(b2);
+  img(b3);
+  img(b4);
+  noStroke();
+
   frame();
   slots();
 }
@@ -23,24 +39,24 @@ function draw() {
 
 
 function frame() {
-  var frameTop = 'click to reroll';
-  var frameBottom = 'action:';
+  var f1 = 'click or press space to reroll';
+  var f2 = 'action:';
 
   textSize(15);
   fill(71, 40, 54);
   textFont(med);
   textAlign(LEFT);
-  text(frameTop, 136, 192);
+  text(f1, 136, 192);
 
   textFont(bld);
-  textAlign(CENTER);
+  textAlign(RIGHT);
   var ol = ['I.', 'II.', 'III.', 'IV.'];
   for (var i = 0; i < ol.length; i++) {
-    text(ol[i], 132, 256 + i * 36);
+    text(ol[i], 152, 256 + i * 36);
   }
 
-  textAlign(RIGHT);
-  text(frameBottom, 146, 480);
+  text(f2, 152, 480);
+
   brackets();
 }
 
@@ -52,10 +68,10 @@ function brackets() {
   stroke(254, 250, 224);
   strokeWeight(2.5);
 
-  beginShape();
-  vertex(520, 208);
+  beginShape(); // f
   vertex(520, 192);
-  vertex(528, 192);
+  vertex(520, 176);
+  vertex(528, 176);
   endShape();
   beginShape();
   vertex(520, 320);
@@ -63,47 +79,48 @@ function brackets() {
   vertex(528, 336);
   endShape();
 
-  beginShape();
-  vertex(672, 128);
-  vertex(672, 120);
-  vertex(688, 120);
+  beginShape(); // p
+  vertex(652, 128);
+  vertex(652, 120);
+  vertex(668, 120);
   endShape();
   beginShape();
-  vertex(840, 120);
-  vertex(856, 120);
-  vertex(856, 128);
-  endShape();
-
-  beginShape();
-  vertex(968, 264);
-  vertex(976, 264);
-  vertex(976, 280);
-  endShape();
-  beginShape();
-  vertex(976, 376);
-  vertex(976, 392);
-  vertex(968, 392);
+  vertex(888, 120);
+  vertex(904, 120);
+  vertex(904, 128);
   endShape();
 
-  beginShape();
-  vertex(632, 448);
-  vertex(632, 456);
-  vertex(648, 456);
+  beginShape(); // o
+  vertex(968, 268);
+  vertex(976, 268);
+  vertex(976, 284);
   endShape();
   beginShape();
-  vertex(712, 456);
-  vertex(728, 456);
-  vertex(728, 448);
+  vertex(976, 352);
+  vertex(976, 368);
+  vertex(968, 368);
+  endShape();
+
+  beginShape(); // t
+  vertex(656, 464);
+  vertex(656, 472);
+  vertex(672, 472);
+  endShape();
+  beginShape();
+  vertex(892, 472);
+  vertex(908, 472);
+  vertex(908, 464);
   endShape();
 
   noStroke();
+  textAlign(CENTER);
   textSize(35);
   textFont(reg);
   fill(98, 73, 84);
-  text('f', 520, 280);
-  text('p', 772, 120);
-  text('o', 992, 340);
-  text('t', 688, 480);
+  text('f', 508, 272);
+  text('p', 780, 112);
+  text('o', 988, 328);
+  text('t', 782, 496);
 }
 
 
@@ -138,4 +155,10 @@ function slots() {
 
 function mousePressed() {
   loop();
+}
+
+function keyPressed() {
+  if (keyCode == 32) {
+    loop();
+  }
 }
