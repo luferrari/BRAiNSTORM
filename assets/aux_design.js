@@ -1,3 +1,19 @@
+function start() {
+  noStroke();
+  if (click === 0) {
+    fill(209, 210, 211, 255);
+    rect(0, 0, width, height);
+    fill(71, 40, 54);
+    textSize(height / 15);
+    textFont(rg);
+    textAlign(CENTER);
+    text('click or press space to begin', width / 2, height / 2);
+  } else {
+    fill(0, 0, 0, 0);
+  }
+}
+
+
 function img(x) {
   image(x, 520, 56, 480, 480);
 }
