@@ -1,15 +1,15 @@
 function counter() {
-  if (step < 10) {
-    background(209, 210, 211);
-    step++;
-    img(b0);
-    roll();
-    //print('steps: ' + step);
-  } else {
-    print('no');
-    noLoop();
+  if (booted) {
+    if (step < 10) {
+      background(209, 210, 211);
+      step++;
+      img(b0);
+      roll();
+      design();
+    } else {
+      noLoop();
+    }
   }
-  design();
 }
 
 
@@ -72,7 +72,6 @@ function roll() {
     fill(209, 210, 211);
     rect(171, heights[h] - 18, 250, 40);
     rect(171, heights[h] + 200, 400, 35);
-    //print('height: ' + heights[h]);
   }
 
   tint(255, 255);

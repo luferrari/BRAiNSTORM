@@ -1,21 +1,18 @@
 function loader() {
   noStroke();
-  fill(71, 40, 54, opa);
+  fill(71, 40, 54, a);
   textAlign(LEFT);
   textSize(10);
   textFont(rg);
-<<<<<<< HEAD
   text('loading...', width / 2, height - 10);
-=======
   text('loading...', width / 2, 10);
->>>>>>> 20442929621da19e4293f4edde2da833e1f87d08
 }
 
 
 
 function boot() {
   booted = true;
-  opa = 0;
+  a = 0;
 
   noStroke();
   if (step === 0) {
@@ -40,6 +37,10 @@ function boot() {
 
 function img(x) {
   image(x, 520, 56, 480, 480);
+}
+
+function gif() {
+  image(gg, 571, 139, 367, 320);
 }
 
 

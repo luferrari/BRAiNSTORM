@@ -18,10 +18,7 @@ function preload() {
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  g1 = loadGif('./assets/images/g1.gif');
-  g2 = loadGif('./assets/images/g2.gif');
-  g3 = loadGif('./assets/images/g3.gif');
-  g4 = loadGif('./assets/images/g4.gif');
+  gg = loadGif('./assets/images/gg.gif');
 }
 
 
@@ -29,13 +26,15 @@ function setup() {
 function draw() {
   loader();
 
-  if (g1.loaded() && g2.loaded() && g3.loaded() && g4.loaded()) {
+  if (gg.loaded()) {
+    booted = true;
     if (step < 10) {
       if (step % 2 === 0) {
         glitch();
       }
       boot();
     } else {
+      glitch();
       hang();
     }
   }

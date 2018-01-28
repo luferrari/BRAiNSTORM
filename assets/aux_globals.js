@@ -1,15 +1,17 @@
 // vars for sketch.js
 
 var rg, md, bd;
-var b0, b1, b2, b3, b4;
-var g0, g1, g2, g3, g4;
 var step = 0;
+
+var b0, b1, b2, b3, b4, gg;
+var sounds;
 
 
 
 // vars for assets/aux_design.js
 var booted = false;
-var opa = 255;
+var a = 255;
+
 
 
 // vars for assets/aux_arch.js

@@ -1,8 +1,7 @@
 function glitch() {
-  design();
   tint(255, 255);
   fill(209, 210, 211);
-  rect(580, 145, 345, 305);
+  rect(560, 145, 390, 315);
   img(b0);
 
   k1 = 0;
@@ -10,20 +9,7 @@ function glitch() {
   k3 = 0;
   k4 = 0;
 
-  if (g1.loaded()) {
-    img(g1);
-  }
-  if (g2.loaded()) {
-    img(g2);
-  }
-  if (g3.loaded()) {
-    img(g3);
-  }
-  if (g4.loaded()) {
-    img(g4);
-  }
-
-
+  gif();
 }
 
 
@@ -46,6 +32,5 @@ function hang() {
 
   filter(INVERT);
 
-  print('no');
   noLoop();
 }
