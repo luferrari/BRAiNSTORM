@@ -13,12 +13,12 @@ function preload() {
   b2 = loadImage('./assets/images/b2.png');
   b3 = loadImage('./assets/images/b3.png');
   b4 = loadImage('./assets/images/b4.png');
+  gg = loadGif('./assets/images/gg.gif');
 }
 
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  gg = loadGif('./assets/images/gg.gif');
 }
 
 
