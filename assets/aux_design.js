@@ -1,26 +1,48 @@
-function start() {
+function loader() {
   noStroke();
-  if (click === 0) {
+  fill(71, 40, 54, opa);
+  textAlign(LEFT);
+  textSize(10);
+  textFont(rg);
+  text('loading...', width / 2, 10);
+}
+
+
+
+function boot() {
+  booted = true;
+  opa = 0;
+
+  noStroke();
+  if (step === 0) {
     fill(209, 210, 211, 255);
     rect(0, 0, width, height);
     fill(71, 40, 54);
-    textSize(height / 15);
-    textFont(rg);
+
     textAlign(CENTER);
-    text('click or press space to begin', width / 2, height / 2);
+    textSize(80);
+    textFont(rg);
+    text('BRAıNSTORM', width / 2, height / 2);
+
+    textSize(20);
+    textFont(md);
+    text('click or press space to begin', width / 2, height / 2 + 140);
   } else {
     fill(0, 0, 0, 0);
   }
 }
 
 
+
 function img(x) {
   image(x, 520, 56, 480, 480);
 }
 
+
+
 function design() {
   var f1 = 'click or press space to reroll';
-  var f2 = 'action:';
+  var f2 = 'doing now:';
 
   textSize(15);
   fill(71, 40, 54);

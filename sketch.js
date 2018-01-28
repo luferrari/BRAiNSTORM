@@ -1,12 +1,8 @@
-var rg, md, bd;
-var b0, b1, b2, b3, b4;
-var bg1, bg2, bg3, bg4;
-var click = 0;
-var parts;
-
 // for additional details on the functions, view the auxiliary files:
+//  - assets/aux_globals.js
 //  - assets/aux_design.js
-//  - assets/aux_random.js
+//  - assets/aux_arch.js
+//  - assets/aux_glitch.js
 
 function preload() {
   rg = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
@@ -17,40 +13,42 @@ function preload() {
   b2 = loadImage('./assets/images/b2.png');
   b3 = loadImage('./assets/images/b3.png');
   b4 = loadImage('./assets/images/b4.png');
-  bg1 = loadImage('./assets/images/bg1.gif');
-  //bg2 = loadImage('./assets/images/bg2.gif');
-  //bg3 = loadImage('./assets/images/bg3.gif');
-  bg4 = loadImage('./assets/images/bg4.gif');
 }
 
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  print('clicks: ' + click);
+  g1 = loadGif('./assets/images/g1.gif');
+  g2 = loadGif('./assets/images/g2.gif');
+  g3 = loadGif('./assets/images/g3.gif');
+  g4 = loadGif('./assets/images/g4.gif');
 }
 
-function draw() { // EVERY FRAME
-  start();
 
-  fill(0);
+
+function draw() {
+  loader();
+
+  if (g1.loaded() && g2.loaded() && g3.loaded() && g4.loaded()) {
+    if (step < 10) {
+      if (step % 2 === 0) {
+        glitch();
+      }
+      boot();
+    } else {
+      hang();
+    }
+  }
 }
 
-function mousePressed() { // ONCE on click
-  background(209, 210, 211);
-  click++;
-  print('clicks: ' + click);
-  img(b0);
-  roll();
-  design();
+
+
+function mousePressed() {
+  counter();
 }
 
-function keyPressed() { // ONCE on keypress
+function keyPressed() {
   if (keyCode == 32) {
-    background(209, 210, 211);
-    click++;
-    print('clicks: ' + click);
-    img(b0);
-    roll();
-    design();
+    counter();
   }
 }

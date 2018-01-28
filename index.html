@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>slots</title>
-    <script src="libraries/p5.js" type="text/javascript"></script>
 
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
-    <script src="assets/aux_design.js" type="text/javascript"></script>
-    <script src="assets/aux_random.js" type="text/javascript"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>slots</title>
+  <script src="libraries/p5.js" type="text/javascript"></script>
 
-    <script src="sketch.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
-    <style> body {padding: 0; margin: 0; background: rgb(209, 210, 211); overflow: hidden; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-content: center; align-items: center;} canvas {margin: calc(50% - 612px) 0;
- vertical-align: middle;} </style>
-  </head>
-  <body>
-  </body>
+  <script src="libraries/p5.gif.js" type="text/javascript"></script>
+  <script src="assets/aux_globals.js" type="text/javascript"></script>
+  <script src="assets/aux_design.js" type="text/javascript"></script>
+  <script src="assets/aux_arch.js" type="text/javascript"></script>
+  <script src="assets/aux_glitch.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: rgb(209, 210, 211);
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    
+    div.glitch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(46, 45, 44);
+      z-index: -1;
+    }
+    
+    canvas {
+      margin: calc(50% - 612px) 0;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
 </html>
