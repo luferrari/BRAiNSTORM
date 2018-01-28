@@ -4,7 +4,11 @@ function loader() {
   textAlign(LEFT);
   textSize(10);
   textFont(rg);
+<<<<<<< HEAD
+  text('loading...', width / 2, height - 10);
+=======
   text('loading...', width / 2, 10);
+>>>>>>> 20442929621da19e4293f4edde2da833e1f87d08
 }
 
 
