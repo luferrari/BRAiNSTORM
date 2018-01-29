@@ -9,7 +9,7 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 [⯈ **Execute the program**](https://luferrari.github.io/brainstorm)
 
-## Code Example
+## Code Snippets
 
 ```js
 var rg, md, bd;
