@@ -5,7 +5,7 @@ function loader() {
   textSize(10);
   textFont(rg);
   text('loading...', width / 2, height - 10);
-  text('loading...', width / 2, 10);
+  text('loading...', width / 2, 15);
 }
 
 
@@ -53,16 +53,16 @@ function design() {
   fill(71, 40, 54);
   textFont(md);
   textAlign(LEFT);
-  text(f1, 136, 192);
+  text(f1, 136, 192 - 80);
 
   textFont(bd);
   textAlign(RIGHT);
   var ol = ['I.', 'II.', 'III.', 'IV.'];
   for (var i = 0; i < ol.length; i++) {
-    text(ol[i], 152, 256 + i * 36);
+    text(ol[i], 152, 256 - 72 + i * 36);
   }
 
-  text(f2, 152, 480);
+  text(f2, 152, 480 - 72);
 
   brackets();
 }

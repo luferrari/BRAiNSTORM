@@ -26,5 +26,5 @@ var actionP = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreig
 var actionO = ['watch a movie', 'admire the sunset', 'look after your dog'];
 var actionT = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
 
-var heights = [256, 292, 328, 364];
+var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
 var f, p, o, t, h; // randomizers

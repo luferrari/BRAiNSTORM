@@ -18,7 +18,7 @@ function hang() {
   var div = createDiv('\u0032');
   div.addClass('glitch');
   background(209, 210, 211, 191);
-  var m1 = 'uh oh.';
+  var m1 = 'uh oh. :(';
   var m2 = 'an overload has occured. please refresh.';
 
   fill(0);
