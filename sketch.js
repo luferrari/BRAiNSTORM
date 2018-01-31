@@ -6,15 +6,9 @@
 //  - code/aux_glitchScreen.js
 
 function preload() {
-  regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
-  medium = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
-  bold = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
-  brain0 = loadImage('./assets/images/brain0.png');
-  brain1 = loadImage('./assets/images/brain1.png');
-  brain2 = loadImage('./assets/images/brain2.png');
-  brain3 = loadImage('./assets/images/brain3.png');
-  brain4 = loadImage('./assets/images/brain4.png');
-  glitched = loadGif('./assets/images/glitched.gif');
+  fonts();
+  images();
+  /*sounds();*/
 }
 
 function setup() {
@@ -22,10 +16,10 @@ function setup() {
   background(209, 210, 211);
 }
 
-function draw() {
+/*function draw() {
   loadingScreen();
 
-  if (glitched.loaded()) {
+  if (brainG.loaded()) {
     booted = true;
     if (state < 10) {
       if (state % 2 === 0) {
@@ -37,7 +31,7 @@ function draw() {
       hangScreen();
     }
   }
-}
+}*/
 
 function mousePressed() {
   changeState();
@@ -47,4 +41,9 @@ function keyPressed() {
   if (keyCode == 32) {
     changeState();
   }
+}
+
+
+function draw() {
+  mapScreen();
 }

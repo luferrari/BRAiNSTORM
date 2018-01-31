@@ -1,11 +1,34 @@
 var regular, medium, bold;
-var state = 0;
+var brain0, brain1, brain2, brain3, brain4, brainG;
+var audio0, audio1, audio2, audio3, audio4, audioG;
 
-var brain0, brain1, brain2, brain3, brain4, glitched;
-var sounds;
+function fonts() {
+  regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
+  medium = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
+  bold = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
+}
+
+function images() {
+  brain0 = loadImage('./assets/images/brain0.png');
+  brain1 = loadImage('./assets/images/brain1.png');
+  brain2 = loadImage('./assets/images/brain2.png');
+  brain3 = loadImage('./assets/images/brain3.png');
+  brain4 = loadImage('./assets/images/brain4.png');
+  brainG = loadGif('./assets/images/brainG.gif');
+}
+
+function sounds() {
+  audio0 = loadSound('./assets/sounds/audio0.ogg');
+  audio1 = loadSound('./assets/sounds/audio1.ogg');
+  audio2 = loadSound('./assets/sounds/audio2.ogg');
+  audio3 = loadSound('./assets/sounds/audio3.ogg');
+  audio4 = loadSound('./assets/sounds/audio4.ogg');
+  audioG = loadSound('./assets/sounds/audioG.ogg');
+}
 
 /* -- */
 
+var state = 0;
 var booted = false;
 var aleph = 255;
 
@@ -18,7 +41,7 @@ function img(png) {
 }
 
 function gif() {
-  image(glitched, 571, 139, 367, 320);
+  image(brainG, 571, 139, 367, 320);
 }
 
 /* -- */
