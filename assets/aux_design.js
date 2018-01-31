@@ -1,32 +1,36 @@
-function loader() {
+function loadingScreen() {
   noStroke();
-  fill(71, 40, 54, a);
+  fill(71, 40, 54, aleph);
   textAlign(LEFT);
   textSize(10);
-  textFont(rg);
+  textFont(regular);
   text('loading...', width / 2, height - 10);
   text('loading...', width / 2, 15);
 }
 
 
 
-function boot() {
+function startScreen() {
   booted = true;
-  a = 0;
+  aleph = 0;
 
   noStroke();
-  if (step === 0) {
+  if (state === 0) {
     fill(209, 210, 211, 255);
     rect(0, 0, width, height);
     fill(71, 40, 54);
 
     textAlign(CENTER);
     textSize(80);
+<<<<<<< HEAD:assets/aux_graphics.js
+    textFont(regular);
+=======
     textFont(rg);
+>>>>>>> 007f02a37c55aede0f70c1eae74c1bab22015064:assets/aux_design.js
     text('BRAiNSTORM', width / 2, height / 2);
 
     textSize(20);
-    textFont(md);
+    textFont(medium);
     text('click or press space to begin', width / 2, height / 2 + 140);
   } else {
     fill(0, 0, 0, 0);
@@ -35,34 +39,24 @@ function boot() {
 
 
 
-function img(x) {
-  image(x, 520, 56, 480, 480);
-}
-
-function gif() {
-  image(gg, 571, 139, 367, 320);
-}
-
-
-
-function design() {
-  var f1 = 'click or press space to reroll';
-  var f2 = 'doing now:';
+function graphics() {
+  var caption1 = 'click or press space to reroll';
+  var caption2 = 'doing now:';
 
   textSize(15);
   fill(71, 40, 54);
-  textFont(md);
+  textFont(medium);
   textAlign(LEFT);
-  text(f1, 136, 192 - 80);
+  text(caption1, 136, 192 - 80);
 
-  textFont(bd);
+  textFont(bold);
   textAlign(RIGHT);
   var ol = ['I.', 'II.', 'III.', 'IV.'];
-  for (var i = 0; i < ol.length; i++) {
-    text(ol[i], 152, 256 - 72 + i * 36);
+  for (var li = 0; li < ol.length; li++) {
+    text(ol[li], 152, 256 - 72 + li * 36);
   }
 
-  text(f2, 152, 480 - 72);
+  text(caption2, 152, 480 - 72);
 
   brackets();
 }
@@ -122,7 +116,7 @@ function brackets() {
   noStroke();
   textAlign(CENTER);
   textSize(35);
-  textFont(rg);
+  textFont(regular);
   fill(98, 73, 84);
   text('f', 508, 272);
   text('p', 780, 112);
