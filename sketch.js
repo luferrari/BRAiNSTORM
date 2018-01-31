@@ -5,15 +5,15 @@
 //  - assets/aux_glitch.js
 
 function preload() {
-  rg = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
-  md = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
-  bd = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
-  b0 = loadImage('./assets/images/b0.png');
-  b1 = loadImage('./assets/images/b1.png');
-  b2 = loadImage('./assets/images/b2.png');
-  b3 = loadImage('./assets/images/b3.png');
-  b4 = loadImage('./assets/images/b4.png');
-  gg = loadGif('./assets/images/gg.gif');
+  regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
+  medium = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
+  bold = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
+  brain0 = loadImage('./assets/images/brain0.png');
+  brain1 = loadImage('./assets/images/brain1.png');
+  brain2 = loadImage('./assets/images/brain2.png');
+  brain3 = loadImage('./assets/images/brain3.png');
+  brain4 = loadImage('./assets/images/brain4.png');
+  glitched = loadGif('./assets/images/glitched.gif');
 }
 
 function setup() {
@@ -24,18 +24,18 @@ function setup() {
 
 
 function draw() {
-  loader();
+  loadingScreen();
 
-  if (gg.loaded()) {
+  if (glitched.loaded()) {
     booted = true;
-    if (step < 10) {
-      if (step % 2 === 0) {
-        glitch();
+    if (state < 10) {
+      if (state % 2 === 0) {
+        glitchScreen();
       }
-      boot();
+      startScreen();
     } else {
-      glitch();
-      hang();
+      glitchScreen();
+      hangScreen();
     }
   }
 }
@@ -43,11 +43,11 @@ function draw() {
 
 
 function mousePressed() {
-  counter();
+  changeState();
 }
 
 function keyPressed() {
   if (keyCode == 32) {
-    counter();
+    changeState();
   }
 }
