@@ -8,15 +8,20 @@
 function preload() {
   fonts();
   images();
-  /*sounds();*/
+  sounds();
 }
 
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
+  audio0.loop(0, 1, ON);
+  audio1.loop(0, 1, OFF);
+  audio2.loop(0, 1, OFF);
+  audio3.loop(0, 1, OFF);
+  audio4.loop(0, 1, OFF);
 }
 
-/*function draw() {
+function drew() {
   loadingScreen();
 
   if (brainG.loaded()) {
@@ -31,7 +36,7 @@ function setup() {
       hangScreen();
     }
   }
-}*/
+}
 
 // map screen test
 function draw() {

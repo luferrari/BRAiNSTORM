@@ -1,6 +1,35 @@
-var regular, medium, bold;
-var brain0, brain1, brain2, brain3, brain4, brainG;
-var audio0, audio1, audio2, audio3, audio4, audioG;
+// VARS
+
+var regular, medium, bold,
+  brain0, brain1, brain2, brain3, brain4, brainG,
+  audio0, audio1, audio2, audio3, audio4, audioG,
+  opa1, opa2, opa3, opa4,
+  hov1, hov2, hov3, hov4,
+  OFF, ON,
+  x, y;
+
+OFF = 0.0001;
+ON = 0.8;
+
+var state = 0;
+var booted = false;
+var aleph = 255;
+
+var frontal = ['smell', 'speech', 'problem solving', 'motor control'];
+var parietal = ['touch', 'taste', 'body awareness', 'language'];
+var occipital = ['vision'];
+var temporal = ['reading', 'facial recognition', 'hearing'];
+
+var actionF = ['smell a flower', 'talk to your friend', 'do math', 'do calligraphy'];
+var actionP = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
+var actionO = ['watch a movie', 'admire the sunset', 'look after your dog'];
+var actionT = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
+var f, p, o, t, h; // randomizers
+var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
+
+
+
+// PRELOAD()
 
 function fonts() {
   regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
@@ -26,11 +55,9 @@ function sounds() {
   audioG = loadSound('./assets/sounds/audioG.ogg');
 }
 
-/* -- */
 
-var state = 0;
-var booted = false;
-var aleph = 255;
+
+// DRAW()
 
 function graph(png) {
   image(png, width / 2 - 240, height / 2 - 240, 480, 480);
@@ -43,18 +70,3 @@ function img(png) {
 function gif() {
   image(brainG, 571, 139, 367, 320);
 }
-
-/* -- */
-
-var frontal = ['smell', 'speech', 'problem solving', 'motor control'];
-var parietal = ['touch', 'taste', 'body awareness', 'language'];
-var occipital = ['vision'];
-var temporal = ['reading', 'facial recognition', 'hearing'];
-
-var actionF = ['smell a flower', 'talk to your friend', 'do math', 'do calligraphy'];
-var actionP = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
-var actionO = ['watch a movie', 'admire the sunset', 'look after your dog'];
-var actionT = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
-
-var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
-var f, p, o, t, h; // randomizers

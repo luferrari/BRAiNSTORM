@@ -4,15 +4,10 @@ function glitchScreen() {
   rect(560, 145, 390, 315);
   img(brain0);
 
-  opac1 = 0;
-  opac2 = 0;
-  opac3 = 0;
-  opac4 = 0;
+  opa1, opa2, opa3, opa4 = 0;
 
   gif();
 }
-
-
 
 function hangScreen() {
   var div = createDiv('\u0032');

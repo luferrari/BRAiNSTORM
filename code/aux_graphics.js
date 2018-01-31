@@ -8,8 +8,6 @@ function loadingScreen() {
   text('loading...', width / 2, 15);
 }
 
-
-
 function startScreen() {
   booted = true;
   aleph = 0;
@@ -33,8 +31,6 @@ function startScreen() {
   }
 }
 
-
-
 function graphics() {
   var caption1 = 'click or press space to reroll';
   var caption2 = 'doing now:';
@@ -56,8 +52,6 @@ function graphics() {
 
   brackets();
 }
-
-
 
 function brackets() {
   noFill();
