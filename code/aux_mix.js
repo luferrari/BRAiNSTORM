@@ -1,10 +1,10 @@
-function counter() {
+function changeState() {
   if (booted) {
     if (state < 10) {
       background(209, 210, 211);
       state++;
       img(brain0);
-      shuffle();
+      mix();
       graphics();
     } else {
       noLoop();
@@ -14,7 +14,7 @@ function counter() {
 
 
 
-function shuffle() {
+function mix() {
   var opac1 = 255;
   var opac2 = 255;
   var opac3 = 255;
@@ -38,7 +38,6 @@ function shuffle() {
         break;
       default:
         return false;
-        break;
     }
   }
 

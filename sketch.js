@@ -1,8 +1,9 @@
 // for additional details, view the auxiliary files:
-//  - assets/aux_globals.js
-//  - assets/aux_design.js
-//  - assets/aux_arch.js
-//  - assets/aux_glitch.js
+//  - assets/aux_!globals.js
+//  - assets/aux_mapScreen.js
+//  - assets/aux_graphics.js
+//  - assets/aux_mix.js
+//  - assets/aux_glitchScreen.js
 
 function preload() {
   regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
