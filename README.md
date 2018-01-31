@@ -35,7 +35,6 @@ function preload() { … }
 
 function setup() { … }
 
-
 function draw() {
   loadingScreen();
 
@@ -52,7 +51,6 @@ function draw() {
     }
   }
 }
-
 
 function mousePressed() { changeState(); }
 
