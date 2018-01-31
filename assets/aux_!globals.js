@@ -1,20 +1,28 @@
-// vars for sketch.js
+// sketch.js
 
-var rg, md, bd;
-var step = 0;
+var regular, medium, bold;
+var state = 0;
 
-var b0, b1, b2, b3, b4, gg;
+var brain0, brain1, brain2, brain3, brain4, glitched;
 var sounds;
 
 
 
-// vars for assets/aux_design.js
+// assets/aux_design.js
 var booted = false;
-var a = 255;
+var aleph = 255;
+
+function img(png) {
+  image(png, 520, 56, 480, 480);
+}
+
+function gif() {
+  image(glitched, 571, 139, 367, 320);
+}
 
 
 
-// vars for assets/aux_arch.js
+// assets/aux_arch.js
 
 var frontal = ['smell', 'speech', 'problem solving', 'motor control'];
 var parietal = ['touch', 'taste', 'body awareness', 'language'];
