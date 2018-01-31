@@ -22,8 +22,6 @@ function setup() {
   background(209, 210, 211);
 }
 
-
-
 function draw() {
   loadingScreen();
 
@@ -40,8 +38,6 @@ function draw() {
     }
   }
 }
-
-
 
 function mousePressed() {
   changeState();
