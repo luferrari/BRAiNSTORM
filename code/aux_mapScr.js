@@ -1,4 +1,6 @@
 function mapScreen() {
+  background(209, 210, 211);
+
   hov1, hov2, hov3, hov4 = 0;
   x = mouseX;
   y = mouseY;
@@ -49,6 +51,11 @@ function mapScreen() {
   tint(255, hov4);
   graph(brain4);
   //rect(492, 307, 146, 52);
+
+  push();
+  translate(-216, 10);
+  brackets();
+  pop();
 
   tint(255, 255);
 }

@@ -60,14 +60,14 @@ function brackets() {
   strokeWeight(2.5);
 
   beginShape(); // f
-  vertex(520, 192);
-  vertex(520, 176);
-  vertex(528, 176);
+  vertex(532, 192);
+  vertex(532, 176);
+  vertex(540, 176);
   endShape();
   beginShape();
-  vertex(520, 320);
-  vertex(520, 336);
-  vertex(528, 336);
+  vertex(532, 320);
+  vertex(532, 336);
+  vertex(540, 336);
   endShape();
 
   beginShape(); // p
@@ -108,7 +108,7 @@ function brackets() {
   textSize(35);
   textFont(regular);
   fill(98, 73, 84);
-  text('f', 508, 272);
+  text('f', 520, 272);
   text('p', 780, 112);
   text('o', 988, 328);
   text('t', 782, 496);
