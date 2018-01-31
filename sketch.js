@@ -33,6 +33,11 @@ function setup() {
   }
 }*/
 
+// map screen test
+function draw() {
+  mapScreen();
+}
+
 function mousePressed() {
   changeState();
 }
@@ -41,9 +46,4 @@ function keyPressed() {
   if (keyCode == 32) {
     changeState();
   }
-}
-
-
-function draw() {
-  mapScreen();
 }
