@@ -1,4 +1,4 @@
-// for additional details on the functions, view the auxiliary files:
+// for additional details, view the auxiliary files:
 //  - assets/aux_globals.js
 //  - assets/aux_design.js
 //  - assets/aux_arch.js

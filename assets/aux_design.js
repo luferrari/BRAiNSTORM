@@ -23,7 +23,7 @@ function boot() {
     textAlign(CENTER);
     textSize(80);
     textFont(rg);
-    text('BRAıNSTORM', width / 2, height / 2);
+    text('BRAiNSTORM', width / 2, height / 2);
 
     textSize(20);
     textFont(md);

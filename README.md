@@ -1,8 +1,8 @@
-# BRAıNSTORM
+# BRAiNSTORM
 
 ## Description
 
-BRAıNSTORM is a semi-interactive program which displays the basics of how the human brain acts when under duress, for example from focusing on many things at once.  
+BRAiNSTORM is a semi-interactive program which displays the basics of how the human brain acts when under duress, for example from focusing on many things at once.  
 The user, through clicks or keypresses, can see random combinations of actions and the activation of their corresponding brain lobes, but only up to a certain point: by forcing the brain to overwork, it &ldquo;shuts down&rdquo;.
 
 This project serves to represent the strain that daily life puts on the brain whenever a person tries to do too many things at once. It is meant to teach that it is important to do one thing at a time in order to get the best results.
