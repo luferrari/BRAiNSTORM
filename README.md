@@ -12,23 +12,24 @@ This project serves to represent the strain that daily life puts on the brain wh
 ## Code Snippets
 
 ```js
-var rg, md, bd;
-var step = 0;
+var regular, medium, bold;
+var state = 0;
 
-var b0, b1, b2, b3, b4, gg;
+var brain0, brain1, brain2, brain3, brain4, glitched;
 var sounds;
 
 var booted = false;
-var a = 255;
+var aleph = 255;
 
-…
+function img(png) { … }
 
-var f, p, o, t, h; // randomizers
+function gif() { … }
+
 ```
 
 ```js
-// for additional details on the functions, view the auxiliary files:
-// …
+// for additional details, view the auxiliary files:
+//  …
 
 function preload() { … }
 
@@ -36,41 +37,41 @@ function setup() { … }
 
 
 function draw() {
-  loader();
+  loadingScreen();
 
-  if (gg.loaded()) {
+  if (glitched.loaded()) {
     booted = true;
-    if (step < 10) {
-      if (step % 2 === 0) {
-        glitch();
+    if (state < 10) {
+      if (state % 2 === 0) {
+        glitchScreen();
       }
-      boot();
+      startScreen();
     } else {
-      glitch();
-      hang();
+      glitchScreen();
+      hangScreen();
     }
   }
 }
 
 
-function mousePressed() { counter(); }
+function mousePressed() { changeState(); }
 
 function keyPressed() {
   if (keyCode == 32) {
-    counter();
+    changeState();
   }
 }
 ```
 
 ```js
-function counter() {
+function changeState() {
   if (booted) {
-    if (step < 10) {
+    if (state < 10) {
       background(209, 210, 211);
-      step++;
-      img(b0);
-      roll();
-      design();
+      state++;
+      img(brain0);
+      mix();
+      graphics();
     } else {
       noLoop();
     }
@@ -80,7 +81,7 @@ function counter() {
 
 ## Acknowledgements
 
++ [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
 + [antiboredom&rsquo;s p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
 + [PHOTOMOSH](https://photomosh.com/)
 + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-+ (image source)
