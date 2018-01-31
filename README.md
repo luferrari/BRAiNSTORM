@@ -80,6 +80,6 @@ function changeState() {
 ## Acknowledgements
 
 + [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
-+ [antiboredom&rsquo;s p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
-+ [PHOTOMOSH](https://photomosh.com/)
 + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
++ [PHOTOMOSH](https://photomosh.com/)
++ [antiboredom&rsquo;s p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
