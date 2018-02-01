@@ -64,16 +64,16 @@ function label(string, part, posX, posY) {
   fill(209, 210, 211);
   switch (part) {
     case frontal:
-      rect(posX - 206, posY - 20, -40, 40);
+      rect(posX - 206, posY - 30, -40, 40);
       break;
     case parietal:
-      rect(posX - 236, posY + 20, 40, -40);
+      rect(posX - 236, posY + 10, 40, -40);
       break;
     case occipital:
-      rect(posX - 226, posY - 17, 40, 40);
+      rect(posX - 226, posY - 27, 40, 40);
       break;
     case temporal:
-      rect(posX - 196, posY + 15, -40, -40);
+      rect(posX - 196, posY + 5, -40, -40);
       break;
     default:
       return false;
@@ -83,41 +83,41 @@ function label(string, part, posX, posY) {
   switch (part) {
     case frontal:
       textAlign(RIGHT);
-      text(string, posX - 216, posY - 30);
+      text(string, posX - 216, posY);
       textAlign(LEFT);
       textFont(medium);
       textSize(16);
-      for (var c = 0; c < part.length; c++) {
-        text(part[c], posX - 356, posY - 25 + 18 * c, 160, 20);
+      for (var c1 = 0; c1 < part.length; c1++) {
+        text(part[c1], posX - 356, posY + 5 + 18 * c1, 160, 20);
       }
       break;
     case parietal:
       textAlign(CENTER);
-      text(string, posX - 216, posY + 10);
+      text(string, posX - 216, posY);
       textAlign(LEFT);
       textFont(medium);
       textSize(16);
-      for (var c = 0; c < part.length; c++) {
-        text(part[c], posX - 297, posY - 95 + 18 * c, 160, 20);
+      for (var c2 = 0; c2 < part.length; c2++) {
+        text(part[c2], posX - 297, posY - 105 + 18 * c2, 160, 20);
       }
       break;
     case occipital:
       textAlign(LEFT);
-      text(string, posX - 225.5, posY + 10);
+      text(string, posX - 225.5, posY);
       textFont(medium);
       textSize(16);
-      for (var c = 0; c < part.length; c++) {
-        text(part[c], posX - 226, posY + 15 + 18 * c, 160, 20);
+      for (var c3 = 0; c3 < part.length; c3++) {
+        text(part[c3], posX - 226, posY + 5 + 18 * c3, 160, 20);
       }
       break;
     case temporal:
       textAlign(CENTER);
-      text(string, posX - 216, posY + 10);
+      text(string, posX - 216, posY);
       textAlign(LEFT);
       textFont(medium);
       textSize(16);
-      for (var c = 0; c < part.length; c++) {
-        text(part[c], posX - 295, posY + 17 + 18 * c, 160, 20);
+      for (var c4 = 0; c4 < part.length; c4++) {
+        text(part[c4], posX - 295, posY + 7 + 18 * c4, 160, 20);
       }
       break;
     default:
