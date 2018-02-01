@@ -5,11 +5,7 @@ var regular, medium, bold,
   audio0, audio1, audio2, audio3, audio4, audioG,
   opa1, opa2, opa3, opa4,
   hov1, hov2, hov3, hov4,
-  OFF, ON,
   x, y;
-
-OFF = 0.0001;
-ON = 0.8;
 
 var state = 0;
 var booted = false;

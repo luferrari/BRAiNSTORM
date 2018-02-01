@@ -14,11 +14,11 @@ function preload() {
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  audio0.loop(0, 1, ON);
-  audio1.loop(0, 1, OFF);
-  audio2.loop(0, 1, OFF);
-  audio3.loop(0, 1, OFF);
-  audio4.loop(0, 1, OFF);
+  audio0.loop(0, 1, 0.27);
+  audio1.loop(0, 1, 0.0001);
+  audio2.loop(0, 1, 0.0001);
+  audio3.loop(0, 1, 0.0001);
+  audio4.loop(0, 1, 0.0001);
 }
 
 function drew() {
