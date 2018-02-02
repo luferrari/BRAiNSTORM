@@ -14,41 +14,45 @@ function preload() {
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  audio0.loop(0, 1, 0.27);
+  audio0.loop(0, 1, 0.0001);
   audio1.loop(0, 1, 0.0001);
   audio2.loop(0, 1, 0.0001);
   audio3.loop(0, 1, 0.0001);
   audio4.loop(0, 1, 0.0001);
 }
 
-function drew() {
+function draw() {
   loadingScreen();
 
   if (brainG.loaded()) {
     booted = true;
-    if (state < 10) {
-      if (state % 2 === 0) {
-        glitchScreen();
-      }
-      startScreen();
-    } else {
-      glitchScreen();
-      hangScreen();
-    }
+    stateCheck();
   }
 }
 
 // map screen test
-function draw() {
+function drew() {
   mapScreen();
 }
 
-function mousePressed() {
-  changeState();
+function mouseClicked() {
+  if (booted) {
+    state++;
+    print(state);
+  }
 }
 
 function keyPressed() {
   if (keyCode == 32) {
-    changeState();
+    if (booted) {
+      state++;
+      print(state);
+    }
+  }
+
+  for (var arr = 37; arr < 41; arr++) {
+    if (keyCode == arr) {
+      print(sel[arr - 37]);
+    }
   }
 }

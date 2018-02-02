@@ -1,37 +1,75 @@
-function loadingScreen() {
-  noStroke();
-  fill(71, 40, 54, aleph);
-  textAlign(LEFT);
-  textSize(10);
-  textFont(regular);
-  text('loading...', width / 2, height - 10);
-  text('loading...', width / 2, 15);
-}
+function label(string, part, posX, posY) {
+  fill(209, 210, 211);
+  switch (part) {
+    case frontal:
+      rect(posX - 206, posY - 30, -40, 40);
+      break;
+    case parietal:
+      rect(posX - 236, posY + 10, 40, -40);
+      break;
+    case occipital:
+      rect(posX - 226, posY - 27, 40, 40);
+      break;
+    case temporal:
+      rect(posX - 196, posY + 5, -40, -40);
+      break;
+    default:
+      return false;
+  }
 
-function startScreen() {
-  booted = true;
-  aleph = 0;
-
-  noStroke();
-  if (state === 0) {
-    fill(209, 210, 211, 255);
-    rect(0, 0, width, height);
-    fill(71, 40, 54);
-
-    textAlign(CENTER);
-    textSize(80);
-    textFont(regular);
-    text('BRAiNSTORM', width / 2, height / 2);
-
-    textSize(20);
-    textFont(medium);
-    text('click or press space to begin', width / 2, height / 2 + 140);
-  } else {
-    fill(0, 0, 0, 0);
+  fill(98, 73, 84);
+  switch (part) {
+    case frontal:
+      textAlign(RIGHT);
+      text(string, posX - 216, posY);
+      textAlign(LEFT);
+      textFont(medium);
+      textSize(16);
+      for (var c1 = 0; c1 < part.length; c1++) {
+        text(part[c1], posX - 356, posY + 5 + 18 * c1, 200, 20);
+      }
+      break;
+    case parietal:
+      textAlign(CENTER);
+      text(string, posX - 216, posY);
+      textAlign(LEFT);
+      textFont(medium);
+      textSize(16);
+      for (var c2 = 0; c2 < part.length; c2++) {
+        text(part[c2], posX - 297, posY - 105 + 18 * c2, 200, 20);
+      }
+      break;
+    case occipital:
+      textAlign(LEFT);
+      text(string, posX - 225.5, posY);
+      textFont(medium);
+      textSize(16);
+      for (var c3 = 0; c3 < part.length; c3++) {
+        text(part[c3], posX - 226, posY + 5 + 18 * c3, 200, 20);
+      }
+      break;
+    case temporal:
+      textAlign(CENTER);
+      text(string, posX - 216, posY);
+      textAlign(LEFT);
+      textFont(medium);
+      textSize(16);
+      for (var c4 = 0; c4 < part.length; c4++) {
+        text(part[c4], posX - 295, posY + 7 + 18 * c4, 200, 20);
+      }
+      break;
+    default:
+      return false;
   }
 }
 
+
+
 function graphics() {
+  background(209, 210, 211);
+  
+  img(brain0);
+
   var caption1 = 'click or press space to reroll';
   var caption2 = 'doing now:';
 
@@ -52,6 +90,8 @@ function graphics() {
 
   brackets();
 }
+
+
 
 function brackets() {
   noFill();

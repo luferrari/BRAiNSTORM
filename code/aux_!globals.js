@@ -11,6 +11,8 @@ var state = 0;
 var booted = false;
 var aleph = 255;
 
+var sel = [frontal, parietal, occipital, temporal];
+
 var frontal = ['smell', 'speech', 'problem solving', 'motor control'];
 var parietal = ['touch', 'taste', 'body awareness', 'language'];
 var occipital = ['vision'];
@@ -20,7 +22,7 @@ var actionF = ['smell a flower', 'talk to your friend', 'do math', 'do calligrap
 var actionP = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
 var actionO = ['watch a movie', 'admire the sunset', 'look after your dog'];
 var actionT = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
-var f, p, o, t, h; // randomizers
+var f, p, o, t, h;
 var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
 
 
