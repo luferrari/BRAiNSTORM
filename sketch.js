@@ -1,9 +1,8 @@
 // for additional details, view the auxiliary files:
 //  - code/aux_!globals.js
-//  - code/aux_mapScreen.js
+//  - code/aux_control.js
 //  - code/aux_graphics.js
-//  - code/aux_mix.js
-//  - code/aux_glitchScreen.js
+//  - code/aux_screens.js
 
 function preload() {
   fonts();
