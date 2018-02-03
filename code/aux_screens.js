@@ -27,7 +27,7 @@ function startScreen() {
     fill(71, 40, 54);
     textSize(20);
     textFont(medium);
-    text('click or press space to begin', width / 2, height / 2 + 140);
+    text('click to start', width / 2, height / 2 + 140);
   } else {
     fill(0, 0, 0, 0);
   }
@@ -109,6 +109,7 @@ function mapScreen() {
 
 
 function playScreen() {
+
   graphics();
 
   opa1, opa2, opa3, opa4 = 255;

@@ -29,10 +29,7 @@ function draw() {
   }
 }
 
-// map screen test
-function drew() {
-  mapScreen();
-}
+
 
 function mouseClicked() {
   if (booted) {
@@ -42,13 +39,6 @@ function mouseClicked() {
 }
 
 function keyPressed() {
-  if (keyCode == 32) {
-    if (booted) {
-      state++;
-      print(state);
-    }
-  }
-
   for (var arr = 37; arr < 41; arr++) {
     if (keyCode == arr) {
       print(sel[arr - 37]);

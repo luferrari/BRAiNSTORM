@@ -6,6 +6,10 @@ function stateCheck() {
         break;
       case 1:
         audio0.setVolume(0.4, 1.0);
+        audio1.setVolume(0.0001, 0.25);
+        audio2.setVolume(0.0001, 0.25);
+        audio3.setVolume(0.0001, 0.25);
+        audio4.setVolume(0.0001, 0.25);
         if (state === 1) {
           mapScreen();
         }

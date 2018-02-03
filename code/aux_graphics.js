@@ -70,7 +70,7 @@ function graphics() {
   
   img(brain0);
 
-  var caption1 = 'click or press space to reroll';
+  var caption1 = 'click to reroll';
   var caption2 = 'doing now:';
 
   textSize(15);
