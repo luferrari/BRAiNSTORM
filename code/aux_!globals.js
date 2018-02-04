@@ -27,9 +27,16 @@ var act1 = 0,
 var pulse = [15, 111];
 var stay = [255, 255];
 
+var a = 0,
+  b = 0,
+  c = 0;
+
 var state = 0;
 var booted = false;
 var aleph = 255;
+var bugged = false;
+
+
 
 var sel = [frontal, parietal, occipital, temporal];
 

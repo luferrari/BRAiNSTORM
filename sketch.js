@@ -18,6 +18,7 @@ function setup() {
   audio2.loop(0, 1, 0.0001);
   audio3.loop(0, 1, 0.0001);
   audio4.loop(0, 1, 0.0001);
+  audioG.loop(0, 1, 0.0001);
 }
 
 function draw() {

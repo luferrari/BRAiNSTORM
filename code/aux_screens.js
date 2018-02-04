@@ -112,10 +112,14 @@ function mapScreen() {
 function playScreen() {
   graphics();
 
-  opa1 = random(pulse[0], pulse[1]);
-  opa2 = random(pulse[0], pulse[1]);
-  opa3 = random(pulse[0], pulse[1]);
-  opa4 = random(pulse[0], pulse[1]);
+  if ((bool1 && bool2 && bool3 && bool4) !== true) {
+    opa1 = random(pulse[0], pulse[1]);
+    opa2 = random(pulse[0], pulse[1]);
+    opa3 = random(pulse[0], pulse[1]);
+    opa4 = random(pulse[0], pulse[1]);
+  } else {
+    opa1 = 0, opa2 = 0, opa3 = 0, opa4 = 0;
+  }
 
   tint(255, 255);
 
@@ -151,19 +155,53 @@ function playScreen() {
   img(brain4);
 
   interactDraw();
+
+  glitchScreen();
 }
 
 
 
 function glitchScreen() {
-  tint(255, 255);
-  fill(209, 210, 211);
-  rect(560, 145, 390, 315);
-  img(brain0);
+  if (bool1 && bool2 && bool3 && bool4) {
+    a++;
+    if (a % 6 === 0) {
+      b++;
+      if (b == 6) {
+        bugged = true;
+        bool1 = false, bool2 = false, bool3 = false, bool4 = false;
+      }
+    }
+  }
 
-  opa1 = 0, opa2 = 0, opa3 = 0, opa4 = 0;
+  if (bugged) {
+    audio0.setVolume(0.0001, 0.25);
+    audio1.setVolume(0.0001, 0.25);
+    audio2.setVolume(0.0001, 0.25);
+    audio3.setVolume(0.0001, 0.25);
+    audio4.setVolume(0.0001, 0.25);
+    audioG.setVolume(0.7, 0.25);
+    act1 = 0, act2 = 0, act3 = 0, act4 = 0;
+    a = 0;
+    b = 0;
+    c++;
 
-  gif();
+    tint(255, 255);
+    fill(209, 210, 211);
+    rect(560, 145, 390, 315);
+    img(brain0);
+
+    gif();
+
+    if (c == 20) {
+      audio0.stop();
+      audio1.stop();
+      audio2.stop();
+      audio3.stop();
+      audio4.stop();
+      audioG.stop();
+      hangScreen();
+    }
+  }
 }
 
 

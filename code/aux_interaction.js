@@ -7,6 +7,14 @@ function interactDraw() {
   img(brain3);
   tint(255, act4);
   img(brain4);
+
+  /*push();
+  textFont(medium);
+  textSize(16);
+  textAlign(LEFT);
+  fill(191, 0, 0);
+  text('a = ' + a + '\nb = ' + b + '\nc = ' + c, 10, height - 50);
+  pop();*/
 }
 
 
@@ -15,7 +23,7 @@ function interactClick() {
   if (621 < mouseX && mouseX < 621 + 80 && 223 < mouseY && mouseY < 223 + 90) {
     bool1 = !bool1;
     if (bool1) {
-      audio1.setVolume(0.8, 0.25);
+      audio1.setVolume(0.6, 0.25);
       act1 = 255;
       print('frontal on');
     } else {
@@ -26,7 +34,7 @@ function interactClick() {
   } else if (721 < mouseX && mouseX < 721 + 154 && 183 < mouseY && mouseY < 183 + 90) {
     bool2 = !bool2;
     if (bool2) {
-      audio2.setVolume(0.8, 0.25);
+      audio2.setVolume(0.6, 0.25);
       act2 = 255;
       print('parietal on');
     } else {
@@ -37,7 +45,7 @@ function interactClick() {
   } else if (891 < mouseX && mouseX < 891 + 15 && 293 < mouseY && mouseY < 293 + 61) {
     bool3 = !bool3;
     if (bool3) {
-      audio3.setVolume(0.8, 0.25);
+      audio3.setVolume(0.6, 0.25);
       act3 = 255;
       print('occipital on');
     } else {
@@ -48,7 +56,7 @@ function interactClick() {
   } else if (708 < mouseX && mouseX < 708 + 146 && 297 < mouseY && mouseY < 297 + 61) {
     bool4 = !bool4;
     if (bool4) {
-      audio4.setVolume(0.8, 0.25);
+      audio4.setVolume(0.6, 0.25);
       act4 = 255;
       print('temporal on');
     } else {
