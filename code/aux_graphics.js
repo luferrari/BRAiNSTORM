@@ -67,8 +67,6 @@ function label(string, part, posX, posY) {
 
 function graphics() {
   background(209, 210, 211);
-  
-  img(brain0);
 
   var caption1 = 'click to reroll';
   var caption2 = 'doing now:';

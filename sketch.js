@@ -26,6 +26,9 @@ function draw() {
   if (brainG.loaded()) {
     booted = true;
     stateCheck();
+    if (state == 2) {
+      playScreen();
+    }
   }
 }
 
@@ -33,8 +36,14 @@ function draw() {
 
 function mouseClicked() {
   if (booted) {
-    state++;
-    print(state);
+    switch (state) {}
+    if (state !== 2) {
+      state++;
+      print(state);
+    }
+    if (state == 2) {
+      interactClick();
+    }
   }
 }
 

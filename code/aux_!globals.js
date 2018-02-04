@@ -2,10 +2,30 @@
 
 var regular, medium, bold,
   brain0, brain1, brain2, brain3, brain4, brainG,
-  audio0, audio1, audio2, audio3, audio4, audioG,
-  opa1, opa2, opa3, opa4,
-  hov1, hov2, hov3, hov4,
-  x, y;
+  audio0, audio1, audio2, audio3, audio4, audioG;
+
+var hov1 = 0,
+  hov2 = 0,
+  hov3 = 0,
+  hov4 = 0;
+
+var bool1,
+  bool2,
+  bool3,
+  bool4;
+
+var opa1,
+  opa2,
+  opa3,
+  opa4;
+
+var act1 = 0,
+  act2 = 0,
+  act3 = 0,
+  act4 = 0;
+
+var pulse = [15, 111];
+var stay = [255, 255];
 
 var state = 0;
 var booted = false;
@@ -18,11 +38,11 @@ var parietal = ['touch', 'taste', 'body awareness', 'language'];
 var occipital = ['vision'];
 var temporal = ['reading', 'facial recognition', 'hearing'];
 
-var actionF = ['smell a flower', 'talk to your friend', 'do math', 'do calligraphy'];
-var actionP = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
-var actionO = ['watch a movie', 'admire the sunset', 'look after your dog'];
-var actionT = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
-var f, p, o, t, h;
+var action1 = ['smell a flower', 'talk to your friend', 'do math', 'do calligraphy'];
+var action2 = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
+var action3 = ['watch a movie', 'admire the sunset', 'look after your dog'];
+var action4 = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
+var r1, r2, r3, r4, h;
 var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
 
 
