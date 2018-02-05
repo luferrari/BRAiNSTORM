@@ -103,8 +103,8 @@ function mapScreen() {
   textFont(medium);
   textAlign(LEFT);
   fill(71, 40, 54);
-  text('hover your mouse over the brain to learn what each lobe is for.', 20, 16, 320, 100);
-  text('when you are done, click to continue.', 20, 87);
+  text('hover your mouse over the brain to learn what each lobe is for.', 20, height - 79, 320, 100);
+  text('when you are done, click to continue.', 20, height - 22);
 }
 
 
