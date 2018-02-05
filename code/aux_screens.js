@@ -196,7 +196,7 @@ function hangScreen() {
   div.addClass('glitch');
   background(209, 210, 211, 127);
   var message1 = 'uh oh. :(';
-  var message2 = 'an overload has occured. please refresh.';
+  var message2 = 'an overload has occurred. please refresh.';
 
   fill(0);
   textAlign(CENTER);
