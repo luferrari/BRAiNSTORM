@@ -5,11 +5,10 @@ function stateCheck() {
         startScreen();
         break;
       case 1: // map screen
-        audio0.setVolume(0.2, 1.0);
+        audio0.setVolume(0.15, 1.0);
         mapScreen();
         break;
       case 2: // play screen
-        audio0.setVolume(0.3, 0.5);
         break;
       default:
         return false;
