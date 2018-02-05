@@ -68,7 +68,7 @@ function label(string, part, posX, posY) {
 function graphics() {
   background(209, 210, 211);
 
-  var caption1 = 'click to reroll';
+  var caption1 = 'click on each lobe to activate it.';
   var caption2 = 'doing now:';
 
   textSize(15);
@@ -79,7 +79,7 @@ function graphics() {
 
   textFont(bold);
   textAlign(RIGHT);
-  var ol = ['I.', 'II.', 'III.', 'IV.'];
+  var ol = ['f.', 'p.', 'o.', 't.'];
   for (var li = 0; li < ol.length; li++) {
     text(ol[li], 152, 256 - 72 + li * 36);
   }

@@ -125,33 +125,16 @@ function playScreen() {
 
   img(brain0);
 
-  textSize(20);
-  textAlign(LEFT);
-  textFont(medium);
-  fill(254, 250, 224);
-
   tint(255, opa1);
-  //r1 = floor(random() * frontal.length);
-  //text(frontal[r1], 176, heights[0]);
-  //text(action1[r1], 176, heights[0] + 224);
   img(brain1);
 
   tint(255, opa2);
-  //r2 = floor(random() * parietal.length);
-  //text(parietal[r2], 176, heights[1]);
-  //text(action2[r2], 176, heights[1] + 224);
   img(brain2);
 
   tint(255, opa3);
-  //text(occipital[0], 176, heights[2]);
-  //r3 = floor(random() * action3.length);
-  //text(action3[r3], 176, heights[2] + 224);
   img(brain3);
 
   tint(255, opa4);
-  //r4 = floor(random() * temporal.length);
-  //text(temporal[r4], 176, heights[3]);
-  //text(action4[r4], 176, heights[3] + 224);
   img(brain4);
 
   interactDraw();
@@ -171,6 +154,8 @@ function glitchScreen() {
         bool1 = false, bool2 = false, bool3 = false, bool4 = false;
       }
     }
+  } else {
+    a = 0;
   }
 
   if (bugged) {

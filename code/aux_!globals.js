@@ -49,7 +49,7 @@ var action1 = ['smell a flower', 'talk to your friend', 'do math', 'do calligrap
 var action2 = ['pet your cat', 'eat an orange', 'take a shower', 'speak a foreign language'];
 var action3 = ['watch a movie', 'admire the sunset', 'look after your dog'];
 var action4 = ['read your favorite novel', 'look for someone in a crowd', 'listen to song lyrics'];
-var r1, r2, r3, r4, h;
+var r1 = 0, r2 = 0, r3 = 0, r4 = 0, h;
 var heights = [256 - 72, 292 - 72, 328 - 72, 364 - 72];
 
 
