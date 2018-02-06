@@ -38,6 +38,7 @@ function setup() {
   audio3.loop(0, 1, 0.0001);
   audio4.loop(0, 1, 0.0001);
   audioG.loop(0, 1, 0.0001);
+  frameRate(10);
 }
 
 function draw() {
