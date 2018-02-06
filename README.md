@@ -11,7 +11,7 @@ By using their mouse, the user can manipulate the parts of the brain and watch a
 
 This project serves to represent the strain that daily life puts on the brain whenever a person tries to do too many things at once. It is meant to teach that it is important to do one thing at a time in order to get the best results.
 
-[**`> execute`**](https://luferrari.github.io/BRAiNSTORM/)
+[**`> execute`**](https://luferrari.github.io/BRAiNSTORM/) :sound: turn up the volume
 
 ![Figure 2](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig2.gif "Fig. 2: Map screen")
 
