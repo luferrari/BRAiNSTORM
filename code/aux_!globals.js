@@ -1,9 +1,5 @@
 // VARS
 
-var regular, medium, bold,
-  brain0, brain1, brain2, brain3, brain4, brainG,
-  audio0, audio1, audio2, audio3, audio4, audioG;
-
 var hov1 = 0,
   hov2 = 0,
   hov3 = 0,

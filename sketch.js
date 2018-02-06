@@ -5,6 +5,10 @@
 //  - code/aux_interaction.js
 //  - code/aux_screens.js
 
+var regular, medium, bold,
+  brain0, brain1, brain2, brain3, brain4, brainG,
+  audio0, audio1, audio2, audio3, audio4, audioG;
+
 function preload() {
   regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
   medium = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
