@@ -1,6 +1,6 @@
 # BRAiNSTORM
 
-![Figure 1](https://github.com/luferrari/brainstorm/raw/master/readme/fig1.png "Start screen")
+![Figure 1](https://github.com/luferrari/brainstorm/raw/master/readme/fig1.png "Fig. 1: Start screen")
 
 ## Summary
 
@@ -13,7 +13,7 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 * * *
 
-![Figure 2](https://github.com/luferrari/brainstorm/raw/master/readme/fig2.gif "Map screen")
+![Figure 2](https://github.com/luferrari/brainstorm/raw/master/readme/fig2.gif "Fig. 2: Map screen")
 
 ## Code Snippets
 
@@ -31,7 +31,7 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 * * *
 
-![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Play screen")
+![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Fig. 3: Play screen")
 
 ## Credits
 
@@ -41,4 +41,4 @@ This project serves to represent the strain that daily life puts on the brain wh
 + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 + [PHOTOMOSH](https://photomosh.com/)
 
-![Figure 4](https://github.com/luferrari/brainstorm/raw/master/readme/fig4.png "uh oh :(")
+![Figure 4](https://github.com/luferrari/brainstorm/raw/master/readme/fig4.png "Fig. 4: uh oh :(")
