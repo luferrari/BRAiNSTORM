@@ -2,6 +2,7 @@
 //  - code/aux_!globals.js
 //  - code/aux_control.js
 //  - code/aux_graphics.js
+//  - code/aux_interaction.js
 //  - code/aux_screens.js
 
 function preload() {
