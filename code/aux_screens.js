@@ -201,7 +201,7 @@ function glitchScreen() {
       audio4.setVolume(0.0001, 0.25),
       audioG.setVolume(0.7, 0.25);
 
-    if (c == 20) {
+    if (e > 900) {
       hangScreen();
     }
   }
@@ -210,8 +210,6 @@ function glitchScreen() {
 
 
 function hangScreen() {
-  state = 3;
-
   audio0.stop(),
     audio1.stop(),
     audio2.stop(),

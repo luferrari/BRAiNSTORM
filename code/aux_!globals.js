@@ -44,8 +44,6 @@ var bugged = false;
 
 
 
-var sel = [frontal, parietal, occipital, temporal];
-
 var frontal = ['smell', 'speech', 'problem solving', 'motor control'];
 var parietal = ['touch', 'taste', 'body awareness', 'language'];
 var occipital = ['vision'];
@@ -79,8 +77,6 @@ function images() {
   brain3 = loadImage('./assets/images/brain3.png');
   brain4 = loadImage('./assets/images/brain4.png');
   brainG = loadGif('./assets/images/brainG.gif');
-  /*brainG = createDiv('');
-  brainG.addClass('bug');*/
 }
 
 function sounds() {
@@ -114,7 +110,7 @@ function gif() {
 function debug_frames(q) {
   if (q === 1) {
     fill(232, 232, 233);
-    rect(9, 9, 72, 22);
+    rect(9, 9, 96, 22);
     textFont(medium);
     textSize(12);
     textAlign(LEFT);
@@ -138,7 +134,7 @@ function debug_play(q) {
 function debug_int(q) {
   if (q === 1) {
     fill(232, 232, 233);
-    rect(49, 39, 32, 80);
+    rect(49, 39, 56, 80);
     textFont(medium);
     textSize(12);
     textAlign(LEFT);

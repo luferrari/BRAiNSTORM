@@ -41,7 +41,7 @@ function draw() {
 
 function mouseClicked() {
   if (booted) {
-    if (state !== 2) {
+    if (state != 2) {
       state++;
     }
     if (state == 2) {

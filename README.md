@@ -15,31 +15,47 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 ## Credits
 
-+ **Producers**
-  + [Barbara Malgorzata Doroszuk](https://github.com/doroszukb)
-  + [Lucia Maria Emilia Ferrari](https://github.com/luferrari)
-  + [Axia Zucchi](https://github.com/axiazucchi)
+* Producers
+  * _[Barbara Malgorzata Doroszuk](https://github.com/doroszukb)_
+  * _[Lucia Maria Emilia Ferrari](https://github.com/luferrari)_
+  * _[Axia Zucchi](https://github.com/axiazucchi)_
 
-+ **Resources**
-  + [p5.js](https://github.com/processing/p5.js)
-  + [p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
-  + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-  + [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
-  + [PHOTOMOSH](https://photomosh.com/)
+* Resources
+  * _[p5.js](https://github.com/processing/p5.js)_
+  * _[p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)_
+  * _[Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)_
+  * _[Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)_
+  * _[PHOTOMOSH](https://photomosh.com/)_
 
 ![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Fig. 3: Play screen")
 
 ## Code Snippets
 
-```js
+```javascript
+function stateCheck() {
+  if (booted) {
+    switch (state) {
+      case 0:
+        …
+        break;
+      case 1:
+        …
+        break;
+      case 2:
+        …
+        break;
+      default:
+        return false;
+    }
+  }
+}
+```
+
+```javascript
 
 ```
 
-```js
-
-```
-
-```js
+```javascript
 
 ```
 
