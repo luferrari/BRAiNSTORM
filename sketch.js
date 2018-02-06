@@ -6,9 +6,23 @@
 //  - code/aux_screens.js
 
 function preload() {
-  fonts();
-  images();
-  sounds();
+  regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
+  medium = loadFont('./assets/fonts/RobotoMono-Medium.ttf');
+  bold = loadFont('./assets/fonts/RobotoMono-Bold.ttf');
+
+  brain0 = loadImage('./assets/images/brain0.png');
+  brain1 = loadImage('./assets/images/brain1.png');
+  brain2 = loadImage('./assets/images/brain2.png');
+  brain3 = loadImage('./assets/images/brain3.png');
+  brain4 = loadImage('./assets/images/brain4.png');
+  brainG = loadGif('./assets/images/brainG.gif');
+
+  audio0 = loadSound('./assets/sounds/audio0.ogg');
+  audio1 = loadSound('./assets/sounds/audio1.ogg');
+  audio2 = loadSound('./assets/sounds/audio2.ogg');
+  audio3 = loadSound('./assets/sounds/audio3.ogg');
+  audio4 = loadSound('./assets/sounds/audio4.ogg');
+  audioG = loadSound('./assets/sounds/audioG.ogg');
 }
 
 function setup() {

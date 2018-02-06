@@ -50,10 +50,6 @@ function stateCheck() {
 ```
 
 ```p5js
-function fonts() {
-  regular = loadFont('…'), medium = loadFont('…'), bold = loadFont('…');
-}
-…
 var state = 0;
 var booted = false;
 var aleph = 255;
