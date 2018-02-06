@@ -32,7 +32,7 @@ function preload() {
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  audio0.loop(0, 1, 0.0001);
+  //audio0.loop(0, 1, 0.0001);
   audio1.loop(0, 1, 0.0001);
   audio2.loop(0, 1, 0.0001);
   audio3.loop(0, 1, 0.0001);
