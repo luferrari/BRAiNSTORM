@@ -19,9 +19,16 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 ## Credits
 
-* [Barbara Malgorzata Doroszuk](https://github.com/doroszukb) &ndash; programming
-* [Lucia Maria Emilia Ferrari](https://github.com/luferrari) &ndash; programming, sound design
-* [Axia Zucchi](https://github.com/axiazucchi) &ndash; programming
+* [Barbara Malgorzata Doroszuk](https://github.com/doroszukb)
+* [Lucia Maria Emilia Ferrari](https://github.com/luferrari)
+* [Axia Zucchi](https://github.com/axiazucchi)
+
+||B.D.|L.F.|A.Z.|
+|---|---|---|---|
+|Programming|:heavy_multiplication_x:|:heavy_multiplication_x:|:heavy_multiplication_x:|
+|Concept|:heavy_multiplication_x:|||
+|Graphic design|||:heavy_multiplication_x:|
+|Sound design||:heavy_multiplication_x:||
 
 
 * [p5.js](https://github.com/processing/p5.js)
@@ -37,32 +44,43 @@ This project serves to represent the strain that daily life puts on the brain wh
 ## Code fragments
 
 ```p5js
-function stateCheck() {
-  if (booted) {
-    switch (state) {
-      case 0: …
-      case 1: …
-      case 2: …
-      default: return false;
-    }
-  }
+function loadingScreen() {
+  noStroke();
+  fill(71, 40, 54, aleph);
+  textAlign(LEFT);
+  textSize(10);
+  textFont(regular);
+  text('loading...', width / 2, height - 10);
+  text('loading...', width / 2, 15);
 }
 ```
 
 ```p5js
-var state = 0;
-var booted = false;
-var aleph = 255;
-var bugged = false;
+var frontal = …
+var parietal = …
+var occipital = …
+var temporal = …
+
+var action1 = …
+var action2 = …
+var action3 = …
+var action4 = …
 ```
 
 ```p5js
-function hangScreen() {
-  audio0.stop(), audio1.stop(), audio2.stop(), audio3.stop(), audio4.stop(), audioG.stop();
-  text(message1, width / 2, height - 112);
-  text(message2, width / 2, height - 40);
-  filter(INVERT);
-  noLoop();
+function stateCheck() {
+  if (booted) {
+    switch (state) {
+      case 0: // start screen
+        …
+      case 1: // map screen
+        …
+      case 2: // play screen
+        …
+      default:
+        return false;
+    }
+  }
 }
 ```
 
