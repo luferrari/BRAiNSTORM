@@ -29,8 +29,6 @@ var int1 = 0,
   int3 = 0,
   int4 = 0;
 
-var stay = 255;
-
 var a = 0,
   b = 0,
   c = 0,
