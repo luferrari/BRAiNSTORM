@@ -1,6 +1,6 @@
 # BRAiNSTORM
 
-![Figure 1](https://github.com/luferrari/brainstorm/raw/master/readme/fig1.png "Fig. 1: Start screen")
+![Figure 1](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig1.png "Fig. 1: Start screen")
 
 
 
@@ -11,9 +11,9 @@ By using their mouse, the user can manipulate the parts of the brain and watch a
 
 This project serves to represent the strain that daily life puts on the brain whenever a person tries to do too many things at once. It is meant to teach that it is important to do one thing at a time in order to get the best results.
 
-[**`> execute`**](https://luferrari.github.io/brainstorm/)
+[**`> execute`**](https://luferrari.github.io/BRAiNSTORM/)
 
-![Figure 2](https://github.com/luferrari/brainstorm/raw/master/readme/fig2.gif "Fig. 2: Map screen")
+![Figure 2](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig2.gif "Fig. 2: Map screen")
 
 
 
@@ -30,7 +30,7 @@ This project serves to represent the strain that daily life puts on the brain wh
 * [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
 * [PHOTOMOSH](https://photomosh.com/)
 
-![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Fig. 3: Play screen")
+![Figure 3](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig3.png "Fig. 3: Play screen")
 
 
 
@@ -66,4 +66,4 @@ function hangScreen() {
 }
 ```
 
-![Figure 4](https://github.com/luferrari/brainstorm/raw/master/readme/fig4.png "Fig. 4: uh oh :(")
+![Figure 4](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig4.png "Fig. 4: uh oh :(")
