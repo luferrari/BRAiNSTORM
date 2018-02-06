@@ -5,6 +5,8 @@
 //  - code/aux_interaction.js
 //  - code/aux_screens.js
 
+
+
 var regular, medium, bold,
   brain0, brain1, brain2, brain3, brain4, brainG,
   audio0, audio1, audio2, audio3, audio4, audioG, buzz;
@@ -68,7 +70,9 @@ function mouseClicked() {
         state++;
         break;
       case 2:
-        interactClick();
+        if (!bugged) {
+          interactClick();
+        }
         break;
       case 3:
         buzz.play(0, 1, 0.6, 0, 0.15);

@@ -219,7 +219,7 @@ function hangScreen() {
     audio4.stop(),
     audioG.stop();
 
-  var bg = createDiv('\u0032');
+  var bg = createDiv('');
   bg.addClass('glitch');
   background(209, 210, 211, 127);
   var message1 = 'uh oh. :(';
