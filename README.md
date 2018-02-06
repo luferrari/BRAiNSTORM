@@ -1,6 +1,6 @@
 # BRAiNSTORM
 
-![Figure 1](https://luferrari.github.io/brainstorm/readme/fig1.png "Start screen")
+![Figure 1](https://github.com/luferrari/brainstorm/raw/master/readme/fig1.png "Start screen")
 
 ## Summary
 
@@ -9,11 +9,11 @@ By using their mouse, the user can manipulate the parts of the brain and watch a
 
 This project serves to represent the strain that daily life puts on the brain whenever a person tries to do too many things at once. It is meant to teach that it is important to do one thing at a time in order to get the best results.
 
-[⯈ **Execute the program**](https://luferrari.github.io/brainstorm)
+[⯈ **Execute the program**](https://github.com/luferrari/brainstorm/raw/master)
 
 * * *
 
-![Figure 2](https://luferrari.github.io/brainstorm/readme/fig2.gif "Map screen")
+![Figure 2](https://github.com/luferrari/brainstorm/raw/master/readme/fig2.gif "Map screen")
 
 ## Code Snippets
 
@@ -31,7 +31,7 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 * * *
 
-![Figure 3](https://luferrari.github.io/brainstorm/readme/fig3.png "Play screen")
+![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Play screen")
 
 ## Credits
 
@@ -41,4 +41,4 @@ This project serves to represent the strain that daily life puts on the brain wh
 + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 + [PHOTOMOSH](https://photomosh.com/)
 
-![Figure 4](https://luferrari.github.io/brainstorm/readme/fig4.png "uh oh :(")
+![Figure 4](https://github.com/luferrari/brainstorm/raw/master/readme/fig4.png "uh oh :(")
