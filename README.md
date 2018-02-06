@@ -15,12 +15,10 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 ## Credits
 
-* Producers
-  * _[Barbara Malgorzata Doroszuk](https://github.com/doroszukb)_
-  * _[Lucia Maria Emilia Ferrari](https://github.com/luferrari)_
-  * _[Axia Zucchi](https://github.com/axiazucchi)_
+  * _[Barbara Malgorzata Doroszuk](https://github.com/doroszukb)_ &ndash; programming
+  * _[Lucia Maria Emilia Ferrari](https://github.com/luferrari)_ &ndash; programming, sound design
+  * _[Axia Zucchi](https://github.com/axiazucchi)_ &ndash; programming
 
-* Resources
   * _[p5.js](https://github.com/processing/p5.js)_
   * _[p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)_
   * _[Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)_
