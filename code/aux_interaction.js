@@ -32,14 +32,15 @@ function interactDraw() {
   push(); // bars
   var barc = ['#ffa700', '#ff7777', '#6ded94', '#6cbbe6'];
   var col = random(barc);
+  var hh = 10;
 
   fill(200);
-  rect(50, 562, 150, 3);
-  rect(300, 562, 150, 3);
-  rect(550, 562, 150, 3);
-  rect(800, 562, 150, 3);
+  rect(50 + 44, 562 - 10, 150, hh);
+  rect(300 + 44, 562 - 10, 150, hh);
+  rect(550 + 44, 562 - 10, 150, hh);
+  rect(800 + 44, 562 - 10, 150, hh);
   if (e > 0) {
-    rect(50, 592, 70, 3);
+    rect(50 + 44, 592 - 10, 70, hh);
   }
 
   if (a < 150) {
@@ -47,31 +48,31 @@ function interactDraw() {
   } else {
     fill(random(70, 150));
   }
-  rect(50, 562, a, 3);
+  rect(50 + 44, 562 - 10, a, hh);
 
   if (b < 150) {
     fill('#ffcaca');
   } else {
     fill(random(70, 150));
   }
-  rect(300, 562, b, 3);
+  rect(300 + 44, 562 - 10, b, hh);
 
   if (c < 150) {
     fill('#d4ffe1');
   } else {
     fill(random(70, 150));
   }
-  rect(550, 562, c, 3);
+  rect(550 + 44, 562 - 10, c, hh);
 
   if (d < 150) {
     fill('#d4effd');
   } else {
     fill(random(70, 150));
   }
-  rect(800, 562, d, 3);
+  rect(800 + 44, 562 - 10, d, hh);
 
   fill(200);
-  rect(50, 592, 900, 3);
+  rect(50 + 44, 592 - 10, 900, hh);
 
   if (bugged) {
     fill(col);
@@ -80,7 +81,7 @@ function interactDraw() {
     fill(250);
   }
   if (e > 0 && e < 1000) {
-    rect(50, 592, e, 3);
+    rect(50 + 44, 592 - 10, e, hh);
   }
   pop();
 }

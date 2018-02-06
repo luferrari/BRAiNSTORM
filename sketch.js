@@ -7,7 +7,7 @@
 
 var regular, medium, bold,
   brain0, brain1, brain2, brain3, brain4, brainG,
-  audio0, audio1, audio2, audio3, audio4, audioG;
+  audio0, audio1, audio2, audio3, audio4, audioG, buzz;
 
 function preload() {
   regular = loadFont('./assets/fonts/RobotoMono-Regular.ttf');
@@ -21,24 +21,24 @@ function preload() {
   brain4 = loadImage('./assets/images/brain4.png');
   brainG = loadGif('./assets/images/brainG.gif');
 
-  //audio0 = loadSound('./assets/sounds/audio0.ogg');
+  audio0 = loadSound('./assets/sounds/audio0.ogg');
   audio1 = loadSound('./assets/sounds/audio1.ogg');
   audio2 = loadSound('./assets/sounds/audio2.ogg');
   audio3 = loadSound('./assets/sounds/audio3.ogg');
   audio4 = loadSound('./assets/sounds/audio4.ogg');
   audioG = loadSound('./assets/sounds/audioG.ogg');
+  buzz = loadSound('./assets/sounds/buzz.ogg');
 }
 
 function setup() {
   createCanvas(1088, 612);
   background(209, 210, 211);
-  //audio0.loop(0, 1, 0.0001);
-  audio1.loop(0, 1, 0.0001);
-  audio2.loop(0, 1, 0.0001);
-  audio3.loop(0, 1, 0.0001);
-  audio4.loop(0, 1, 0.0001);
-  audioG.loop(0, 1, 0.0001);
-  frameRate(10);
+  audio0.loop(0, 1, 0.0001, 0, 2);
+  audio1.loop(0, 1, 0.0001, 0, 2);
+  audio2.loop(0, 1, 0.0001, 0, 2);
+  audio3.loop(0, 1, 0.0001, 0, 2);
+  audio4.loop(0, 1, 0.0001, 0, 2);
+  audioG.loop(0, 1, 0.0001, 0, 2);
 }
 
 function draw() {
@@ -60,11 +60,21 @@ function draw() {
 
 function mouseClicked() {
   if (booted) {
-    if (state != 2) {
-      state++;
-    }
-    if (state == 2) {
-      interactClick();
+    switch (state) {
+      case 0:
+        state++;
+        break;
+      case 1:
+        state++;
+        break;
+      case 2:
+        interactClick();
+        break;
+      case 3:
+        buzz.play(0, 1, 0.6, 0, 0.15);
+        break;
+      default:
+        return false;
     }
   }
 }

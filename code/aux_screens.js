@@ -70,7 +70,7 @@ function mapScreen() {
     bool3 = true;
     audio3.setVolume(0.8, 0.25);
     hov3 = 255;
-    label('occipital', occipital, 988, 328, LEFT);
+    label('occipital', occipital, 987, 328, LEFT);
   } else {
     bool3 = false;
     audio3.setVolume(0.0001, 0.25);
@@ -210,7 +210,9 @@ function glitchScreen() {
 
 
 function hangScreen() {
-  // audio0.stop(),
+  state = 3;
+  
+  audio0.stop(),
     audio1.stop(),
     audio2.stop(),
     audio3.stop(),

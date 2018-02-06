@@ -68,7 +68,7 @@ function label(string, part, posX, posY) {
 function graphics() {
   background(209, 210, 211);
 
-  var caption1 = 'click on each lobe to activate it.';
+  var caption1 = 'click on a lobe to activate it.';
   var caption2 = 'doing now:';
 
   textSize(15);
