@@ -29,7 +29,7 @@ function startScreen() {
     textFont(medium);
     text('click to start', width / 2, height / 2 + 140);
   } else {
-    fill(0, 0, 0, 0);
+    fill(0, 0);
   }
 }
 

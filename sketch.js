@@ -47,11 +47,3 @@ function mouseClicked() {
     }
   }
 }
-
-function keyPressed() {
-  for (var arr = 37; arr < 41; arr++) {
-    if (keyCode == arr) {
-      print(sel[arr - 37]);
-    }
-  }
-}
