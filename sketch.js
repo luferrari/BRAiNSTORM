@@ -31,9 +31,9 @@ function draw() {
     if (state == 2) {
       playScreen();
     }
-    debug_frames(1);
-    debug_play(1);
-    debug_int(1);
+    debug_frames(0);
+    debug_play(0);
+    debug_int(0);
   }
 }
 
