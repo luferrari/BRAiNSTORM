@@ -9,7 +9,7 @@ By using their mouse, the user can manipulate the parts of the brain and watch a
 
 This project serves to represent the strain that daily life puts on the brain whenever a person tries to do too many things at once. It is meant to teach that it is important to do one thing at a time in order to get the best results.
 
-[⯈ **Execute the program**](https://github.com/luferrari/brainstorm/raw/master)
+[⯈ **Execute the program**](https://github.com/luferrari/brainstorm/)
 
 * * *
 
