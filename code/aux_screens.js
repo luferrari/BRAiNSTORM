@@ -151,7 +151,7 @@ function playScreen() {
 
 
 function glitchScreen() {
-  if (state == 2) {
+  /*if (state == 2) {
     if (bool1 && bool2 && bool3 && bool4) {
       a++;
       if (a % 6 === 0) {
@@ -164,7 +164,7 @@ function glitchScreen() {
     } else {
       a = 0;
     }
-  }
+  }*/
 
   a = bool1 ? (a < 150 ? a + 30 : 150) : (a > 0 ? a - 30 : 0);
   b = bool2 ? (b < 150 ? b + 30 : 150) : (b > 0 ? b - 30 : 0);
@@ -194,7 +194,7 @@ function glitchScreen() {
     img(brain0);
 
     gif();
-    audio0.setVolume(0.0001, 0.25),
+    // audio0.setVolume(0.0001, 0.25),
       audio1.setVolume(0.0001, 0.25),
       audio2.setVolume(0.0001, 0.25),
       audio3.setVolume(0.0001, 0.25),
@@ -210,7 +210,7 @@ function glitchScreen() {
 
 
 function hangScreen() {
-  audio0.stop(),
+  // audio0.stop(),
     audio1.stop(),
     audio2.stop(),
     audio3.stop(),

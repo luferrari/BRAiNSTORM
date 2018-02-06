@@ -21,7 +21,7 @@ function preload() {
   brain4 = loadImage('./assets/images/brain4.png');
   brainG = loadGif('./assets/images/brainG.gif');
 
-  audio0 = loadSound('./assets/sounds/audio0.ogg');
+  //audio0 = loadSound('./assets/sounds/audio0.ogg');
   audio1 = loadSound('./assets/sounds/audio1.ogg');
   audio2 = loadSound('./assets/sounds/audio2.ogg');
   audio3 = loadSound('./assets/sounds/audio3.ogg');
