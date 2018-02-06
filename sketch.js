@@ -40,7 +40,6 @@ function mouseClicked() {
     switch (state) {}
     if (state !== 2) {
       state++;
-      print(state);
     }
     if (state == 2) {
       interactClick();
