@@ -1,85 +1,132 @@
 function interactDraw() {
-  tint(255, act1);
+  tint(255, int1);
   img(brain1);
-  tint(255, act2);
+  tint(255, int2);
   img(brain2);
-  tint(255, act3);
+  tint(255, int3);
   img(brain3);
-  tint(255, act4);
+  tint(255, int4);
   img(brain4);
 
   textSize(20);
   textAlign(LEFT);
   textFont(medium);
 
-  fill(254, 250, 224, act1);
+  fill(254, 250, 224, int1);
   text(frontal[r1], 176, heights[0]);
   text(action1[r1], 176, heights[0] + 224);
 
-  fill(254, 250, 224, act2);
+  fill(254, 250, 224, int2);
   text(parietal[r2], 176, heights[1]);
   text(action2[r2], 176, heights[1] + 224);
 
-  fill(254, 250, 224, act3);
+  fill(254, 250, 224, int3);
   text(occipital[0], 176, heights[2]);
   text(action3[r3], 176, heights[2] + 224);
 
-  fill(254, 250, 224, act4);
+  fill(254, 250, 224, int4);
   text(temporal[r4], 176, heights[3]);
   text(action4[r4], 176, heights[3] + 224);
 
-  // push();
-  // textFont(medium);
-  // textSize(16);
-  // textAlign(LEFT);
-  // fill(191, 0, 0);
-  // text('a = ' + a + '\nb = ' + b + '\nc = ' + c, 10, height - 50);
-  // pop();
+
+  push(); // bars
+  var barc = ['#ffa700', '#ff7777', '#6ded94', '#6cbbe6'];
+  var col = random(barc);
+
+  fill(200);
+  rect(50, 562, 150, 3);
+  rect(300, 562, 150, 3);
+  rect(550, 562, 150, 3);
+  rect(800, 562, 150, 3);
+  if (e > 0) {
+    rect(50, 592, 70, 3);
+  }
+
+  if (a < 150) {
+    fill('#ffe5b5');
+  } else {
+    fill(random(70, 150));
+  }
+  rect(50, 562, a, 3);
+
+  if (b < 150) {
+    fill('#ffcaca');
+  } else {
+    fill(random(70, 150));
+  }
+  rect(300, 562, b, 3);
+
+  if (c < 150) {
+    fill('#d4ffe1');
+  } else {
+    fill(random(70, 150));
+  }
+  rect(550, 562, c, 3);
+
+  if (d < 150) {
+    fill('#d4effd');
+  } else {
+    fill(random(70, 150));
+  }
+  rect(800, 562, d, 3);
+
+  fill(200);
+  rect(50, 592, 900, 3);
+
+  if (bugged) {
+    fill(col);
+    tint(255, random());
+  } else {
+    fill(250);
+  }
+  if (e > 0 && e < 1000) {
+    rect(50, 592, e, 3);
+  }
+  pop();
 }
 
 
 
 function interactClick() {
-
   if (621 < mouseX && mouseX < 621 + 80 && 223 < mouseY && mouseY < 223 + 90) {
     bool1 = !bool1;
     if (bool1) { // frontal on
-      act1 = 255;
+      int1 = 255;
       r1 = floor(random() * frontal.length);
       audio1.setVolume(0.6, 0.25);
     } else { // frontal off
+      int1 = 0;
       audio1.setVolume(0.0001, 0.25);
-      act1 = 0;
     }
   } else if (721 < mouseX && mouseX < 721 + 154 && 183 < mouseY && mouseY < 183 + 90) {
     bool2 = !bool2;
     if (bool2) { // parietal on
-      act2 = 255;
+      int2 = 255;
       r2 = floor(random() * parietal.length);
       audio2.setVolume(0.6, 0.25);
     } else { // parietal off
+      int2 = 0;
       audio2.setVolume(0.0001, 0.25);
-      act2 = 0;
     }
   } else if (891 < mouseX && mouseX < 891 + 15 && 293 < mouseY && mouseY < 293 + 61) {
     bool3 = !bool3;
     if (bool3) { // occipital on
-      act3 = 255;
+      int3 = 255;
       r3 = floor(random() * action3.length);
       audio3.setVolume(0.6, 0.25);
     } else { // occipital off
+      int3 = 0;
       audio3.setVolume(0.0001, 0.25);
-      act3 = 0;
     }
   } else if (708 < mouseX && mouseX < 708 + 146 && 297 < mouseY && mouseY < 297 + 61) {
     bool4 = !bool4;
     if (bool4) { // temporal on
-      act4 = 255;
+      int4 = 255;
       r4 = floor(random() * temporal.length);
       audio4.setVolume(0.6, 0.25);
     } else { // temporal off
+      int4 = 0;
       audio4.setVolume(0.0001, 0.25);
-      act4 = 0;
     }
   }
 }

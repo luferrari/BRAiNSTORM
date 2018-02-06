@@ -30,6 +30,9 @@ function draw() {
     if (state == 2) {
       playScreen();
     }
+    debug_frames(1);
+    debug_play(1);
+    debug_int(1);
   }
 }
 
@@ -37,7 +40,6 @@ function draw() {
 
 function mouseClicked() {
   if (booted) {
-    switch (state) {}
     if (state !== 2) {
       state++;
     }

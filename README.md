@@ -11,9 +11,23 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 [⯈ **Execute the program**](https://luferrari.github.io/brainstorm/)
 
-* * *
-
 ![Figure 2](https://github.com/luferrari/brainstorm/raw/master/readme/fig2.gif "Fig. 2: Map screen")
+
+## Credits
+
++ **Producers**
+  + [Barbara Malgorzata Doroszuk](https://github.com/doroszukb)
+  + [Lucia Maria Emilia Ferrari](https://github.com/luferrari)
+  + [Axia Zucchi](https://github.com/axiazucchi)
+
++ **Resources**
+  + [p5.js](https://github.com/processing/p5.js)
+  + [p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
+  + [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
+  + [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
+  + [PHOTOMOSH](https://photomosh.com/)
+
+![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Fig. 3: Play screen")
 
 ## Code Snippets
 
@@ -28,17 +42,5 @@ This project serves to represent the strain that daily life puts on the brain wh
 ```js
 
 ```
-
-* * *
-
-![Figure 3](https://github.com/luferrari/brainstorm/raw/master/readme/fig3.png "Fig. 3: Play screen")
-
-## Credits
-
-+ [p5.js](https://github.com/processing/p5.js)
-+ [antiboredom&rsquo;s p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
-+ [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
-+ [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-+ [PHOTOMOSH](https://photomosh.com/)
 
 ![Figure 4](https://github.com/luferrari/brainstorm/raw/master/readme/fig4.png "Fig. 4: uh oh :(")
