@@ -17,30 +17,6 @@ This project serves to represent the strain that daily life puts on the brain wh
 
 
 
-## Credits
-
-* [Barbara Malgorzata Doroszuk](https://github.com/doroszukb)
-* [Lucia Maria Emilia Ferrari](https://github.com/luferrari)
-* [Axia Zucchi](https://github.com/axiazucchi)
-
-||B.D.|L.F.|A.Z.|
-|---|---|---|---|
-|Programming|:heavy_multiplication_x:|:heavy_multiplication_x:|:heavy_multiplication_x:|
-|Concept|:heavy_multiplication_x:|||
-|Graphic design|||:heavy_multiplication_x:|
-|Sound design||:heavy_multiplication_x:||
-
-
-* [p5.js](https://github.com/processing/p5.js)
-* [p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
-* [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-* [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
-* [PHOTOMOSH](https://photomosh.com/)
-
-![Figure 3](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig3.png "Fig. 3: Play screen")
-
-
-
 ## Code fragments
 
 ```p5js
@@ -83,5 +59,31 @@ function stateCheck() {
   }
 }
 ```
+
+
+
+![Figure 3](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig3.png "Fig. 3: Play screen")
+
+
+
+## Credits
+
+* [Barbara Malgorzata Doroszuk](https://github.com/doroszukb)
+* [Lucia Maria Emilia Ferrari](https://github.com/luferrari)
+* [Axia Zucchi](https://github.com/axiazucchi)
+
+||B.D.|L.F.|A.Z.|
+|---|---|---|---|
+|Programming|:heavy_multiplication_x:|:heavy_multiplication_x:|:heavy_multiplication_x:|
+|Concept|:heavy_multiplication_x:|||
+|Graphic design|||:heavy_multiplication_x:|
+|Sound design||:heavy_multiplication_x:||
+
+
+* [p5.js](https://github.com/processing/p5.js)
+* [p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
+* [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
+* [Brain image](https://newsroom.clevelandclinic.org/2017/06/29/cleveland-clinic-researcher-receives-3-4-m-nih-grant-for-epilepsy-surgery-research/)
+* [PHOTOMOSH](https://photomosh.com/)
 
 ![Figure 4](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig4.png "Fig. 4: uh oh :(")
