@@ -194,7 +194,7 @@ function glitchScreen() {
     img(brain0);
 
     gif();
-    // audio0.setVolume(0.0001, 0.25),
+    audio0.setVolume(0.0001, 0.25),
       audio1.setVolume(0.0001, 0.25),
       audio2.setVolume(0.0001, 0.25),
       audio3.setVolume(0.0001, 0.25),
