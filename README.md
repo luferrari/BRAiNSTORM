@@ -1,3 +1,8 @@
+### _This project is currently nonfunctional for as of yet unknown reasons._
+### _We apologize for the inconvenience._
+
+* * *
+
 # BRAiNSTORM
 
 ![Figure 1](https://github.com/luferrari/BRAiNSTORM/raw/master/readme/fig1.png "Fig. 1: Start screen")
